@@ -1,0 +1,151 @@
+.toggle-menu {
+  --line-color: #fff;
+  --line-space: 15px;
+  --toggle-width: 80px;
+  --line-radius: 3px;
+  --toggle-speed: 0.5s;
+  display: block;
+  width: var(--toggle-width);
+  height: 80px;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-menu__line {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: var(--line-color);
+  border-radius: var(--line-radius);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.toggle-menu__line + .toggle-menu__line {
+  margin-top: var(--line-space);
+}
+
+.active .toggle-menu__line--1 {
+  animation: ease var(--toggle-speed) top forwards;
+}
+
+.not-active .toggle-menu__line--1 {
+  animation: ease var(--toggle-speed) top-2 forwards;
+}
+
+.active .toggle-menu__line--2 {
+  animation: ease var(--toggle-speed) scaled forwards;
+}
+
+.not-active .toggle-menu__line--2 {
+  animation: ease var(--toggle-speed) scaled-2 forwards;
+}
+
+.active .toggle-menu__line--3 {
+  animation: ease var(--toggle-speed) bottom forwards;
+}
+
+.not-active .toggle-menu__line--3 {
+  animation: ease var(--toggle-speed) bottom-2 forwards;
+}
+
+@keyframes top {
+
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    top: 22px;
+    transform: rotate(0);
+  }
+
+  100% {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+
+  0% {
+    top: 22px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 22px;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+
+  100% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+
+  0% {
+    bottom: 22px;
+    transform: rotate(135deg);
+  }
+
+  50% {
+    bottom: 22px;
+    transform: rotate(0);
+  }
+
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
