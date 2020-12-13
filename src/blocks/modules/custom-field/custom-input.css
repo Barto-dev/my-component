@@ -1,0 +1,83 @@
+.custom-field {
+  --font-size: 16px;
+  --field-size: 100%;
+  --success-color: #00e676;
+  --error-color: #ff1744;
+  position: relative;
+  width: var(--field-size);
+  max-width: 350px;
+}
+
+.custom-field--open {
+  .custom-field__desc {
+    top: 0;
+  }
+}
+
+.custom-field--error {
+  .custom-field__desc {
+    top: 0;
+    color: var(--error-color);
+
+  }
+
+  .custom-field__input {
+    border-color: var(--error-color);
+  }
+
+  .custom-field__error {
+    opacity: 1;
+    bottom: -33%;
+  }
+}
+
+.custom-field--success {
+  .custom-field__desc {
+    top: 0;
+    color: var(--success-color);
+  }
+
+  .custom-field__input {
+    border-color: var(--success-color);
+  }
+}
+
+.custom-field__desc {
+  position: absolute;
+  display: block;
+  padding: 0 5px;
+  font-weight: 700;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s ease-in-out;
+  background-color:#fff;
+  font-size: var(--font-size);
+}
+
+.custom-field__input {
+  border: 2px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  font-size: var(--font-size);
+  width: var(--field-size);
+}
+
+.custom-field__error {
+  position: absolute;
+  right: 10px;
+  bottom: -73%;
+  opacity: 0;
+  color: var(--error-color);
+  transition:all 0.3s;
+}
+
+.custom-field__input:focus {
+  outline: none;
+}
+
+#toggle-password {
+  margin-left: 200px;
+  position: absolute;
+}

@@ -1,0 +1,31 @@
+.close-btn {
+  --size: 30px;
+  --line-color: #1da1f2;
+  position: relative;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: calc(var(--size) - 10%);
+    height: calc(var(--size) - 90%);
+    background-color: var(--line-color);
+    left: 50%;
+    border-radius: calc(var(--size) + 20%);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+

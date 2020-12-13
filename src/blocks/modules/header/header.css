@@ -158,7 +158,7 @@
     left: 0;
     width: 18px;
     height: 18px;
-    content: "";
+    content: '';
     background-image: url(../img/icon/icon-phone.svg);
   }
 }

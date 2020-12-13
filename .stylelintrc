@@ -109,7 +109,7 @@
     "string-no-newline": [true, {
       "message": "В строчных данных не должно быть переносов"
     }],
-    "string-quotes": ["double", {
+    "string-quotes": ["single", {
       "message": "Кавычки одинарные в стилях на проекте у нас"
     }],
     "length-zero-no-unit": [true, {
