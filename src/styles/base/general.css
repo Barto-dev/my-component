@@ -51,3 +51,8 @@ img {
   grid-gap: 20px;
   width: 700px;
 }
+
+.center {
+  display: grid;
+  grid-gap: 10px;
+}

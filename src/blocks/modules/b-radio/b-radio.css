@@ -1,8 +1,8 @@
-.b-checkbox {
+.b-radio {
   --margin-right: 10px;
-  --size: 20px;
-  --active: #275efe;
-  --active-inner: #fff;
+  --size: 22px;
+  --active: #fff;
+  --active-inner: #275efe;
   --focus: 0 0 0 2px rgba(39, 94, 254, .3);
   --border: #bbc1e1;
   --border-hover: #275efe;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-.b-checkbox__control {
+.b-radio__control {
   position: relative;
   margin-right: var(--margin-right);
   appearance: none;
@@ -21,52 +21,51 @@
   height: var(--size);
   width: var(--size);
   cursor: pointer;
+  border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--background);
   transition: background .3s, border-color .3s, box-shadow .2s;
 
-  /*checkbox inner*/
+  /*radio inner*/
 
   &::after {
     display: none;
     position: absolute;
     content: '';
-    width: 7px;
-    height: 12px;
-    border: 2px solid var(--active-inner);
-    border-top: 0;
-    border-left: 0;
-    left: 6px;
-    top: 1px;
-    transform: rotate(35deg);
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color:var(--active-inner);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 
-.b-checkbox__control:checked {
+.b-radio__control:checked {
   background: var(--active);
-  border-color: var(--active);
+  border-color: var(--active-inner);
 
   &::after {
     display: block;
   }
 }
 
-.b-checkbox__control:disabled {
+.b-radio__control:disabled {
   background: var(--disabled);
-  border-color: var(--disabled);
+  border-color: var(--disabled-inner);
   cursor: not-allowed;
 
   &::after {
-    border-color: var(--disabled-inner);
+    background-color: var(--disabled-inner);
   }
 }
 
-.b-checkbox__control:hover:not(:disabled) {
+.b-radio__control:hover:not(:disabled) {
   border-color: var(--border-hover);
 }
 
-.b-checkbox__control:focus {
+.b-radio__control:focus {
   box-shadow: var(--focus);
 }
-
