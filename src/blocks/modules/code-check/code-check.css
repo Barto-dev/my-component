@@ -1,0 +1,35 @@
+.input-container {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.code-check__container {
+  --font-size: 16px;
+  --letter-spacing: 20px;
+  position: relative;
+  display: block;
+  line-height: 1;
+  font-family: Consolas, monospace;
+}
+
+.code-check__cell {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 50px;
+  border: 1px solid #000;
+  left: calc(var(--i) * (var(--letter-spacing) + 10px))
+}
+
+.code-check__input {
+  outline: none;
+  padding: 0 7px;
+  letter-spacing: var(--letter-spacing);
+  height: 50px;
+  border: none;
+  background-color: transparent;
+}
+
+.code-check__input:focus ~ .code-check__cell {
+  border-color: gray;
+}

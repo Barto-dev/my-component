@@ -1,1 +1,4 @@
-@import './**/*.css';
+/*@import "modules/form/form.css";
+@import "modules/code-check/code-check.css";*/
+
+@import "modules/rating/rating.css";

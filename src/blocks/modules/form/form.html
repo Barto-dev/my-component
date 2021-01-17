@@ -1,0 +1,164 @@
+<div class="form-container">
+  <form id="form">
+
+    <label for="grade1">
+      Grade 1
+      <meter id="grade1" value="60" min="0" low="70" high="85" max="100" optimum="95"></meter>
+    </label>
+
+    <label for="grade2">
+      Grade 2
+      <meter id="grade2" value="80" min="0" low="70" high="85" max="100" optimum="95"></meter>
+    </label>
+
+    <label for="grade3">
+      Grade 3
+      <meter id="grade3" value="90" min="0" low="70" high="85" max="100" optimum="95"></meter>
+    </label>
+
+
+    <label>
+      <span class="visually-hidden">Search</span>
+      <input type="search" inputmode="search">
+      <button type="submit">
+        <svg width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none"
+             stroke="currentcolor"
+             stroke-width="2">
+          <circle cx="14" cy="14" r="12" />
+          <path d="M23 23 L30 30" />
+        </svg>
+        <span class="visually-hidden">Submit</span>
+      </button>
+    </label>
+
+    <label for="example">
+      Label text
+      <span aria-hidden="true">*</span>
+      <input id="example" name="example" required type="text" inputmode="url">
+    </label>
+
+    <fieldset>
+      <legend>Operating System</legend>
+      <label>
+        <input type="radio" name="os" value="windows">
+        Windows
+      </label>
+      <label>
+        <input type="radio" name="os" value="mac">
+        Mac
+      </label>
+      <label>
+        <input type="radio" name="os" value="linux">
+        Linux
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Favorite JS Frameworks</legend>
+      <label>
+        <input type="checkbox" name="ck-angular" value="angular">
+        Angular
+      </label>
+      <label>
+        <input type="checkbox" name="ck-react" value="react">
+        React
+      </label>
+      <label>
+        <input type="checkbox" name="ck-vue" value="vue">
+        Vue
+      </label>
+      <label>
+        <input type="checkbox" name="ck-svelte" value="svelte">
+        Svelte
+      </label>
+    </fieldset>
+
+    <label>
+      Position
+      <select name="position">
+        <option value="" selected></option>
+        <option value="fs">Full Stack</option>
+        <option value="fe">Front End</option>
+        <option value="be">Back End</option>
+        <option value="de">Designer</option>
+        <option value="pm">Project Manager</option>
+        <option value="ceo">CEO</option>
+      </select>
+    </label>
+
+    <label>
+      Years of Experience
+      <input name="exp" type="number">
+    </label>
+
+    <fieldset>
+      <label>
+        First Name
+        <input name="fname">
+      </label>
+      <label>
+        Last Name
+        <input name="lname">
+      </label>
+    </fieldset>
+
+    <label>
+      Email
+      <input name="email" type="email">
+    </label>
+
+    <label>
+      Comments
+      <textarea name="comments"></textarea>
+    </label>
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+
+  <form>
+    <fieldset>
+      <legend>Operating System</legend>
+
+      <label for="windows">
+        <input id="windows" name="os" type="radio" value="windows">
+        Windows
+      </label>
+
+      <label id="mac">
+        <input id="os" name="os" type="radio" value="mac">
+        Mac
+      </label>
+
+      <label id="linux">
+        <input name="os" type="radio" value="linux">
+        Linux
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Favorite JS Frameworks</legend>
+
+      <label for="angular">
+        <input id="angular" name="ck-angular" type="checkbox" value="angular">
+        Angular
+      </label>
+
+      <label for="react">
+        <input id="react" name="ck-react" type="checkbox" value="react">
+        React
+      </label>
+
+      <label for="vue">
+        <input id="vue" name="ck-vue" type="checkbox" value="vue">
+        Vue
+      </label>
+
+      <label for="svelte">
+        <input id="svelte" name="ck-svelte" type="checkbox" value="svelte">
+        Svelte
+      </label>
+    </fieldset>
+  </form>
+</div>
