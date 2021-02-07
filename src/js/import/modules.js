@@ -9,4 +9,4 @@
 
 // import '%modules%/form/form';
 // import '%modules%/code-check/code-check';
-import '%modules%/switch-language/switch-language'
+// import '%modules%/switch-language/switch-language'
