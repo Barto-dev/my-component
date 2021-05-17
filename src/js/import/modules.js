@@ -8,5 +8,7 @@
 // import '%modules%/stories/stories';
 
 // import '%modules%/form/form';
-// import '%modules%/code-check/code-check';
+import '%modules%/code-check/code-check';
 // import '%modules%/switch-language/switch-language'
+// import '%modules%/webgl-img/webgl-img'
+import '%modules%/tooltip/tooltip'

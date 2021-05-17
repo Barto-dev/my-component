@@ -33,3 +33,4 @@
 .code-check__input:focus ~ .code-check__cell {
   border-color: gray;
 }
+
