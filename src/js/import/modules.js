@@ -1,8 +1,8 @@
 // Header
 // import '%modules%/header/header';
 
-// import '%modules%/toggle-menu/toggle-menu';
-
+import '%modules%/toggle-menu/toggle-menu';
+import '%modules%/toggle-navigation/toggle-navigation';
 // import '%modules%/custom-field/custom-field';
 
 // import '%modules%/stories/stories';
